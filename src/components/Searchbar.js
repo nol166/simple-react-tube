@@ -1,12 +1,7 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 
 export class Searchbar extends Component {
     state = { term: '' }
-
-    static propTypes = {
-
-    }
 
     onInputChange = e => {
         this.setState({ term: e.target.value })
