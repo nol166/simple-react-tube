@@ -3,9 +3,14 @@ import React from 'react'
 const VideoDetail = ({ video }) => {
     if (!video) { return <div>Loading...</div> }
 
+    const videoURL = `https://youtube.com/embed/${video.id.videoId}`
+
     return (
         <div>
-            <div class="ui segment">
+            <div className="ui embed">
+                <iframe src={videoURL} title="video"></iframe>
+            </div>
+            <div className="ui segment">
                 <h4>{video.snippet.title}</h4>
                 <p>
                     {video.snippet.description}
