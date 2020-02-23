@@ -1,4 +1,5 @@
 import axios from "axios"
+//TODO: consider moving to .env file to hide the API key
 const KEY = "AIzaSyBJtM8GTsU8enFBs05juWslruyg1uRh8nU";
 
 
