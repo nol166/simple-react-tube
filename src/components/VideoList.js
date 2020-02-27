@@ -6,6 +6,7 @@ import VideoItem from './VideoItem'
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
 */
 const VideoList = ({ videos, onVideoSelect }) => {
+
     const renderedList = videos.map(video => {
         return <VideoItem key={video.id.videoId} video={video} onVideoSelect={onVideoSelect} />
     })
